@@ -8,7 +8,7 @@ import os
 # Download the movies.pkl file if it doesn't exist
 if not os.path.exists('movies.pkl'):
     url = "https://drive.google.com/uc?id=19FmxTyCUtPEDYmR6sINHG-OwiUSvlQ6l"
-    gdown.download(url, 'movies.pkl', quiet=False, fuzzy=True)
+    gdown.download(url, 'movies.pkl', quiet=False)
 
 with open('movies.pkl', 'rb') as f:
     movies, cosine_sim = pickle.load(f)
