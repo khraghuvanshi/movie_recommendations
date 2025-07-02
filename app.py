@@ -7,7 +7,7 @@ import os
 
 # Download the movies.pkl file if it doesn't exist
 if not os.path.exists('movies.pkl'):
-    url = 'https://drive.google.com/file/d/19FmxTyCUtPEDYmR6sINHG-OwiUSvlQ6l/view?usp=sharing'
+    url = "https://drive.google.com/uc?id=19FmxTyCUtPEDYmR6sINHG-OwiUSvlQ6l"
     gdown.download(url, 'movies.pkl', quiet=False)
 
 with open('movies.pkl', 'rb') as f:
